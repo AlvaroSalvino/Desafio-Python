@@ -1,3 +1,10 @@
+deposito = {
+}
+saque = {
+}
+extrato = {
+}
+
 
 while True:
     opcao = input(f'''========== Banco DIO ==========
@@ -7,6 +14,8 @@ while True:
         2 - Sacar
 
         3 - Ver Extrato
+
+        0 - Sair
                 
         INSIRA UMA OPÇÃO: ''')
 
@@ -19,3 +28,7 @@ while True:
                 break
     if opcao == '2':
         saque = int(input('Quanto deseja sacar?: '))
+        if saque > '500':
+            print('Limite máximo para saque: R$ 500')
+    if opcao == '3':
+        print(f'''Seu extrato:''')
